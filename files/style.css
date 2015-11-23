@@ -1,0 +1,8 @@
+.table{
+	color: rgb(0,150,0);
+	background-color: rgb(255,255,255);
+}
+table{
+	border-collapse: collapse;
+	border: 2px solid black;
+}
