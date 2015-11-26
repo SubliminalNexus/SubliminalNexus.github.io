@@ -1,7 +1,7 @@
 .box{
 	background-color: rgb(255,255,255);
-	width:100px;
-	height:80px;
+	width:125px;
+	height:75px;
 	display:inline-block;
 	
 }
@@ -11,8 +11,8 @@ table{
 	text-shadow: 0 0 3px black;
 	background-color:rgb(175,175,175);
 	border-radius: 5px;
-	height:calc(100% - 8px);
-	width:calc(100% - 10px);
+	height:100%;
+	width:100%;
 	text-align:center;
 }
 }
