@@ -5,5 +5,9 @@ body{
 .header{
   padding: 10px;
   background-color: #FFD764;
-  text-shadow: 0 0 5px #000000;
+  text-shadow: 0 0 5px #FFFFFF;
+  display: inline-block;
+  font-weight:700;
+  font-size:150%;
+  color: #FFE682;
 }
