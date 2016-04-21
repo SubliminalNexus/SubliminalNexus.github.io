@@ -4,10 +4,10 @@ body{
 }
 .header{
   padding: 10px;
-  background-color: #FFD764;
+  background-color: #FFE682;
   text-shadow: 0 0 5px #FFFFFF;
   display: inline-block;
   font-weight:700;
   font-size:150%;
-  color: #FFE682;
+  color: black;
 }
