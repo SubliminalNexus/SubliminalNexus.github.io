@@ -1,4 +1,9 @@
 body{
-  background-color: rgb(150,150,150);
-  color: rgb(230,230,230);
+  background-color: #969696;
+  color: #E6E6E6;
+}
+.header{
+  padding: 10px;
+  background-color: #FFD764;
+  text-shadow: 0 0 5px #000000;
 }
