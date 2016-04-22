@@ -1,5 +1,4 @@
-/*
-$(function(){
-});
-*/
-var sel = $(".buttons select")
+$(window).load(Code());
+function Code(){
+  var sel = $(".buttons select")
+};
