@@ -1,3 +1,5 @@
+/*
 $(function(){
-  var sel = $(".buttons select")
 });
+*/
+var sel = $(".buttons select")
