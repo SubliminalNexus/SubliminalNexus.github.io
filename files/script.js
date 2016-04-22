@@ -1,3 +1,5 @@
 $(window).load(Code());
-function Code(){};
+function Code(){
+  sel.hide();
+};
 var sel = $(".buttons select");
