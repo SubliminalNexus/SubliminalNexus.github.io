@@ -7,5 +7,5 @@ function startup(){
 };
 startup();
 //Dev Functions, Remove from final version
-function block(ID){ $("ID").hide(); };
-function show(ID){  $("ID").show()  };
+function block(ID){ $(ID).hide() };
+function show(ID){  $(ID).show()  };
