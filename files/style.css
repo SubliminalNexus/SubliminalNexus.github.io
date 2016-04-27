@@ -17,3 +17,6 @@ body{
 div{
   display:inline-block;
 }
+.outer{
+  display:block;
+}
