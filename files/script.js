@@ -3,11 +3,9 @@ function divHeight(ID, HEIGHT){
   $(ID).height(HEIGHT);
 };
 var quotes = 0;
-function quotecycle(Qs){
-  alert(quotes);
-  quotes++;
-};
-$("#submit").click(quotecycle(quotes));
+$("#submit").click(function(quotes){
+  alert(quotes + "if this executed on page load, something is wrong")
+});
 //On page startup
 function startup(){
   $(".blockerino").hide();
