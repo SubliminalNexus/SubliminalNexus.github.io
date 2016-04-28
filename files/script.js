@@ -15,7 +15,7 @@ $("#submit").click(function(){
 function startup(){
   $(".blockerino").hide();
 };
-startup();
+// startup();
 
 //Dev Functions, Remove from final version
 function block(ID){ $(ID).hide() };
