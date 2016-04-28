@@ -1,4 +1,5 @@
-var sel = $(".buttons select");
+$(function() {
+  var sel = $(".buttons select");
 function divHeight(ID, HEIGHT){
   $(ID).height(HEIGHT);
 };
@@ -17,3 +18,4 @@ startup();
 //Dev Functions, Remove from final version
 function block(ID){ $(ID).hide() };
 function show(ID){  $(ID).show()  };
+});
