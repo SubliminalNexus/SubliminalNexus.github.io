@@ -3,8 +3,13 @@ function divHeight(ID, HEIGHT){
   $(ID).height(HEIGHT);
 };
 var quotes = 0;
-$("#submit").click(function(quotes){
-  alert(quotes + "if this executed on page load, something is wrong")
+$("#submit").click(function(){
+  switch(quotes){
+    case "0":
+      $(".instrc").hide();
+      
+  };
+  quotes++;
 });
 //On page startup
 function startup(){
