@@ -6,7 +6,6 @@ body{
   padding: 10px;
   background-color: #FFE682;
   text-shadow: 0 0 5px #FFFFFF;
-  display: inline-block;
   font-weight:700;
   font-size:150%;
   color: black;
@@ -16,7 +15,4 @@ body{
 }
 div{
   display:inline-block;
-}
-.outer{
-  display:block;
 }
