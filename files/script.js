@@ -14,23 +14,23 @@ var sel = $(".buttons select");
 function divHeight(ID, HEIGHT){
   $(ID).height(HEIGHT);
 };
-var quotevar = 0;
+var quotevar = -1;
 $("#submit").click(function(){
   if($("#quotetext").html()===""){
     $("#quotetext").html(quotes[quotevar]);
     quotevar++;
     $(".instrc").hide();
   } else {
-    selar[quotevar-1] = sel.val();
+    selar[quotevar-1] = parseInt(sel.val());
     quotevar++;
     $("#quotetext").html(quotes[quotevar]);
   };
   if(quotevar ==8){
     for(var i=0;i<selar.length;i++){
       if(i==0||i==1||i==6){
-      selvar -= parseInt(selar[i]);
+      selvar -= selar[i];
       }else{
-      selvar += parseInt(selar[i]);
+      selvar += selar[i];
       }
     };
     alert(selvar);
