@@ -19,6 +19,9 @@ div{
 #submit{
   font-size:120%;
 }
-selectoption{
+select{
   font-size:120%;
-  |
+}
+option{
+  font-size:120%;
+}
