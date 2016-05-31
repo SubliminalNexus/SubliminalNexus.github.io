@@ -14,7 +14,7 @@ var sel = $(".buttons select");
 function divHeight(ID, HEIGHT){
   $(ID).height(HEIGHT);
 };
-var quotevar = -1;
+var quotevar = 0;
 $("#submit").click(function(){
   if($("#quotetext").html()===""){
     $("#quotetext").html(quotes[quotevar]);
