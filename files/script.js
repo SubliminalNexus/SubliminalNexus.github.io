@@ -12,20 +12,21 @@ var sel = $(".buttons select");
 function divHeight(ID, HEIGHT){
   $(ID).height(HEIGHT);
 };
-var quotes = 0;
+var quotevar = 0;
 $("#submit").click(function(){
-  switch(quotes){
+  switch(quotevar){
     case "0":
-      $(".instrc").hide();
+      $(".instrc span").hide();
+      $(".instrc .header-text").show();
       
   };
-  quotes++;
+  quotevar++;
 });
 //On page startup
 function startup(){
   $(".blockerino").hide();
 };
-// startup();
+startup();
 
 //Dev Functions, Remove from final version
 function block(ID){ $(ID).hide() };
