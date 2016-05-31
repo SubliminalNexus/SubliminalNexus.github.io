@@ -19,7 +19,7 @@ $("#submit").click(function(){
   if($("#quotetext").html()===""){
     $("#quotetext").html(quotes[quotevar]);
     $(".instrc").hide();
-    $("#submit").show();
+    $(".buttons").show();
   } else {
     selar[quotevar] = parseInt(sel.val());
     quotevar++;
