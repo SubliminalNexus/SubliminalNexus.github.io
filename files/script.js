@@ -19,6 +19,7 @@ $("#submit").click(function(){
   if($("#quotetext").html()===""){
     $("#quotetext").html(quotes[quotevar]);
     $(".instrc").hide();
+    $("#submit").show();
   } else {
     selar[quotevar] = parseInt(sel.val());
     quotevar++;
@@ -39,7 +40,7 @@ $("#submit").click(function(){
 function startup(){
   $(".blockerino").hide();
 };
-// startup();
+startup();
 
 //Dev Functions, Remove from final version
 function block(ID){ $(ID).hide() };
