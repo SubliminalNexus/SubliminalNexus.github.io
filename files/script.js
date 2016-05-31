@@ -25,8 +25,8 @@ $("#submit").click(function(){
     quotevar++;
     $("#quotetext").html(quotes[quotevar]);
   };
-  if(quotevar ===8){
-    for(var i=0;i<selar.legnth;i++){
+  if(quotevar ==8){
+    for(var i=0;i<selar.length;i++){
       selvar += parseInt(selar[i]);
     };
     alert(selvar);
