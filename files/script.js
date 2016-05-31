@@ -8,6 +8,7 @@ var quotes = [
   "The species are not in any sense at war with one another.",
   "The laws they make in Washington aren't put on the books because they work well, they're put on the books because they represent the one right way to live.",
   ];
+var selvar = 0;
 var selar = [];
 var sel = $(".buttons select");
 function divHeight(ID, HEIGHT){
@@ -23,6 +24,13 @@ $("#submit").click(function(){
     selar[quotevar-1] = sel.val();
     quotevar++;
     $("#quotetext").html(quotes[quotevar]);
+  }
+  if(quotevar ===8){
+    for(var i=0;i<selar.legnth;i++){
+      selvar += parseInt(selar[i];
+      alert("selvar");
+      location.reload();
+    }
   }
 });
 //On page startup
