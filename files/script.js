@@ -24,7 +24,7 @@ $("#submit").click(function(){
     selar[quotevar-1] = sel.val();
     quotevar++;
     $("#quotetext").html(quotes[quotevar]);
-  }
+  };
   if(quotevar ===8){
     for(var i=0;i<selar.legnth;i++){
       selvar += parseInt(selar[i]);
