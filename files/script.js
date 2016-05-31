@@ -20,7 +20,7 @@ $("#submit").click(function(){
     $("#quotetext").html(quotes[quotevar]);
     $(".instrc").hide();
   } else {
-    selar[quotevar-1] = parseInt(sel.val());
+    selar[quotevar] = parseInt(sel.val());
     quotevar++;
     $("#quotetext").html(quotes[quotevar]);
   };
