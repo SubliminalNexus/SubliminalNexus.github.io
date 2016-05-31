@@ -17,6 +17,7 @@ $("#submit").click(function(){
   if($("#quotetext").html()===""){
     $("#quotetext").html(quotes[quotevar]);
     quotevar++;
+    $(".instrc").hide();
   } else {
     quotevar++;
     $("#quotetext").html(quotes[quotevar]);
