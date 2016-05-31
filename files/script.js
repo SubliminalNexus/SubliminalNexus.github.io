@@ -24,6 +24,7 @@ $("#submit").click(function(){
     selar[quotevar] = parseInt(sel.val());
     quotevar++;
     $("#quotetext").html(quotes[quotevar]);
+    sel.val("0");
   };
   if(quotevar ==8){
     for(var i=0;i<selar.length;i++){
@@ -33,7 +34,21 @@ $("#submit").click(function(){
       selvar -= selar[i];
       }
     };
-    alert(selvar);
+    if(selvar<=16&&selvar>=11){
+      alert("Your mentality is strongly resemblent of one of a Leaver, purhapps you shouldn't even be amongst the Takers.")
+    };
+    if(selvar<=10&&selvar>=4){
+      alert("While not completely agreeing with the Leaver emntality, you think more like the Leaver than a Taker.")
+    };
+    if(selvar<=3&&selvar>=-3){
+      alert("You are at a cross roads between the Taker and Leaver mentalities, you are truely neutral.")
+    };
+    if(selvar<=-4&&selvar>=-10){
+      alert("You possess a mentality that more closely resembles that of a Taker than one of a Leaver.")
+    };
+    if(selvar<=-11&&selvar>=-16){
+      alert("Your mentality is that of a Taker, which is fitting considering you are using a computer to complete this activity.")
+    };
   };
 });
 //On page startup
