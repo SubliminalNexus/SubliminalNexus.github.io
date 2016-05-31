@@ -16,7 +16,7 @@ function divHeight(ID, HEIGHT){
 };
 var quotevar = 0;
 $("#submit").click(function(){
-  if($("#quotetext").html()===""){
+  if($("#quotetext").html()===""||quotevar==1){
     $("#quotetext").html(quotes[quotevar]);
     quotevar++;
     $(".instrc").hide();
