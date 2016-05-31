@@ -14,19 +14,19 @@ function divHeight(ID, HEIGHT){
 };
 var quotevar = 0;
 $("#submit").click(function(){
-  switch(quotevar){
-    case "0":
-      $(".instrc span").hide();
-      $(".instrc .header-text").show();
-      
-  };
-  quotevar++;
+  if($("#quotetext").html()===""){
+    $("#quotetext").html(quotes[quotevar]);
+    quotevar++;
+  } else {
+    quotevar++;
+    $("#quotetext").html(quotes[quotevar]);
+  }
 });
 //On page startup
 function startup(){
   $(".blockerino").hide();
 };
-startup();
+// startup();
 
 //Dev Functions, Remove from final version
 function block(ID){ $(ID).hide() };
