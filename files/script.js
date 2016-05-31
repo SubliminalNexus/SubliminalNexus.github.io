@@ -27,7 +27,7 @@ $("#submit").click(function(){
   }
   if(quotevar ===8){
     for(var i=0;i<selar.legnth;i++){
-      selvar += parseInt(selar[i];
+      selvar += parseInt(selar[i]);
       alert("selvar");
       location.reload();
     }
