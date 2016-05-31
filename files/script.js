@@ -27,9 +27,9 @@ $("#submit").click(function(){
   if(quotevar ==8){
     for(var i=0;i<selar.length;i++){
       if(i==0||i==1||i==6){
-      selvar -= selar[i];
-      }else{
       selvar += selar[i];
+      }else{
+      selvar -= selar[i];
       }
     };
     alert(selvar);
