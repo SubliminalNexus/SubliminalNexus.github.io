@@ -1,12 +1,12 @@
 var quotes = [
-  "There is no one right way to live.",
-  "There's nothing fundamentally wrong with people.",
-  "Perhaps the flaw in man is that he doesn't know how he ought to live.",
-  "Man is the end product of creation.",
-  "Man is the creature for whom all the rest was made: this world, this solar system, this galaxy, the universe itself.",
-  "Perhaps the flaw in man is exactly this: that he doesn't know how he ought to live.",
-  "The species are not in any sense at war with one another.",
-  "The laws they make in Washington aren't put on the books because they work well, they're put on the books because they represent the one right way to live.",
+  1"There is no one right way to live.",
+  2"There's nothing fundamentally wrong with people.",
+  3"Perhaps the flaw in man is that he doesn't know how he ought to live.",
+  4"Man is the end product of creation.",
+  5"Man is the creature for whom all the rest was made: this world, this solar system, this galaxy, the universe itself.",
+  6"Perhaps the flaw in man is exactly this: that he doesn't know how he ought to live.",
+  7"The species are not in any sense at war with one another.",
+  8"The laws they make in Washington aren't put on the books because they work well, they're put on the books because they represent the one right way to live.",
   ];
 var selvar = 0;
 var selar = [];
@@ -27,7 +27,11 @@ $("#submit").click(function(){
   };
   if(quotevar ==8){
     for(var i=0;i<selar.length;i++){
+      if(i==0||i==1||i=6){
+      selvar -= parseInt(selar[i]);
+      }else{
       selvar += parseInt(selar[i]);
+      }
     };
     alert(selvar);
   };
