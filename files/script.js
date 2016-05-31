@@ -27,7 +27,7 @@ $("#submit").click(function(){
   };
   if(quotevar ==8){
     for(var i=0;i<selar.length;i++){
-      if(i==0||i==1||i=6){
+      if(i==0||i==1||i==6){
       selvar -= parseInt(selar[i]);
       }else{
       selvar += parseInt(selar[i]);
