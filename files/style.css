@@ -16,3 +16,6 @@ body{
 div{
   display:inline-block;
 }
+#submit{
+  font-size:120%;
+}
