@@ -7,6 +7,8 @@ var quotes = [
   "Perhaps the flaw in man is exactly this: that he doesn't know how he ought to live.",
   "The species are not in any sense at war with one another.",
   "The laws they make in Washington aren't put on the books because they work well, they're put on the books because they represent the one right way to live.",
+  "You shouldn't have to settle for rabbits if what you want is deer",
+  "No one species shall make the life of the world its own."
   ];
 var selvar = 0;
 var selar = [];
@@ -26,7 +28,7 @@ $("#submit").click(function(){
     $("#quotetext").html(quotes[quotevar]);
     sel.val("0");
   };
-  if(quotevar ==8){
+  if(quotevar ==quotes.length){
     for(var i=0;i<selar.length;i++){
       if(i==0||i==1||i==6){
       selvar += selar[i];
