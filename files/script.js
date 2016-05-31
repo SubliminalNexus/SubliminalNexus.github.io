@@ -7,7 +7,8 @@ var quotes = [
   "Perhaps the flaw in man is exactly this: that he doesn't know how he ought to live.",
   "The species are not in any sense at war with one another.",
   "The laws they make in Washington aren't put on the books because they work well, they're put on the books because they represent the one right way to live.",
-  ]
+  ];
+var selar = [];
 var sel = $(".buttons select");
 function divHeight(ID, HEIGHT){
   $(ID).height(HEIGHT);
@@ -19,6 +20,7 @@ $("#submit").click(function(){
     quotevar++;
     $(".instrc").hide();
   } else {
+    selar[quotevar-1] = sel.val();
     quotevar++;
     $("#quotetext").html(quotes[quotevar]);
   }
