@@ -51,6 +51,7 @@ $("#submit").click(function(){
   };
   $("#submit").hide();
   $("select").hide();
+  $("#quotetext").css("font-size", "200%");
 }});
 var resquote = [
   "Your mentality is strongly resemblent of one of a Leaver, perhaps you shouldn't even be amongst the Takers.",
