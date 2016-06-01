@@ -49,6 +49,8 @@ $("#submit").click(function(){
     if(selvar<=-13&&selvar>=-20){
     $("#quotetext").html(resquote[4]);
   };
+  $("#submit").hide();
+  $("select").hide();
 }});
 var resquote = [
   "Your mentality is strongly resemblent of one of a Leaver, perhaps you shouldn't even be amongst the Takers.",
