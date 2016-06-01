@@ -49,7 +49,7 @@ $("#submit").click(function(){
     if(selvar<=-13&&selvar>=-20){
     $("#quotetext").html(resquote[4]);
   };
-};
+}});
 var resquote = [
   "Your mentality is strongly resemblent of one of a Leaver, perhaps you shouldn't even be amongst the Takers.",
   "While not completely agreeing with the Leaver emntality, you think more like the Leaver than a Taker.",
@@ -60,5 +60,5 @@ var resquote = [
 //On page startup
 function startup(){
   $(".blockerino").hide();
-}});
+};
 startup();
