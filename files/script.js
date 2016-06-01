@@ -13,9 +13,6 @@ var quotes = [
 var selvar = 0;
 var selar = [];
 var sel = $(".buttons select");
-function divHeight(ID, HEIGHT){
-  $(ID).height(HEIGHT);
-};
 var quotevar = 0;
 $("#submit").click(function(){
   if($("#quotetext").html()===""){
@@ -63,5 +60,5 @@ var resquote = [
 //On page startup
 function startup(){
   $(".blockerino").hide();
-};
+}});
 startup();
