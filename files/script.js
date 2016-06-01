@@ -38,22 +38,28 @@ $("#submit").click(function(){
       }
     };
     if(selvar<=20&&selvar>=13){
-      alert("Your mentality is strongly resemblent of one of a Leaver, purhapps you shouldn't even be amongst the Takers.")
+     $("#quotetext").html(resquote[0]);
     };
     if(selvar<=12&&selvar>=5){
-      alert("While not completely agreeing with the Leaver emntality, you think more like the Leaver than a Taker.")
+    $("#quotetext").html(resquote[1]);
     };
     if(selvar<=4&&selvar>=-4){
-      alert("You are at a cross roads between the Taker and Leaver mentalities, you are truely neutral.")
+    $("#quotetext").html(resquote[2]);
     };
     if(selvar<=-5&&selvar>=-12){
-      alert("You possess a mentality that more closely resembles that of a Taker than one of a Leaver.")
+    $("#quotetext").html(resquote[3]);
     };
     if(selvar<=-13&&selvar>=-20){
-      alert("Your mentality is that of a Taker, which is not quite fitting considering you are used a computer to complete this activity.")
-    };
+    $("#quotetext").html(resquote[4]);
   };
 });
+var resquote = [
+  "Your mentality is strongly resemblent of one of a Leaver, perhaps you shouldn't even be amongst the Takers.",
+  "While not completely agreeing with the Leaver emntality, you think more like the Leaver than a Taker.",
+  "You are at a cross roads between the Taker and Leaver mentalities, you are truely neutral.",
+  "You possess a mentality that more closely resembles that of a Taker than one of a Leaver.",
+  "Your mentality is that of a Taker, which is fitting considering you used a computer to complete this activity."
+  ];
 //On page startup
 function startup(){
   $(".blockerino").hide();
