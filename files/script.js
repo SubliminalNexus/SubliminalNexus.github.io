@@ -11,7 +11,7 @@ var game = {};
     game.seclength.count = 0;
 //after second presteige
   game.interest = {};
-    game.interest.interest = 1.00;
+    game.interest.interest = 0.00;
     game.interest.cost = 10000;
     game.interest.count = 0;
 //after thrid presteige
@@ -22,4 +22,4 @@ var game = {};
 window.setInterval(function(){
   game.money += ((game.mps.mps+(game.money*game.interest.interest))*game.gainmultiplier.gainmultiplier)/(20/game.seclength.seclength)
   console.log(game.money);
-},50)
+},50);
