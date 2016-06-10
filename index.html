@@ -5,21 +5,35 @@
 	<script src="files/jquery-2.1.4.min.js"></script>
 </head>
 <body>
+
 <div class="box">
 <span class="boxtitle">Money</span><br />
 $<span id="money">100</span><br />
-$<span id="mps">0</span>/sec
+$<span id="mps">0</span>/sec<br />
+<span id="seclen">100</span>% Sec length
 </div>
+
 <div class="box">
 <span class="boxtitle">Money/sec</span><br />
 + $<span id="mpsinc">1</span><br />
-Cost: $<span id="mpsinccost">100</span>
+Cost: $<span id="mpsinccost">100</span><br />
+Count: <span id=mpsinccount>0</span>
 </div>
+
 <div class="box">
 <span class="boxtitle">Second length</span><br />
 - <span id="secdec">5</span>%<br />
-Cost: $<span id="secdeccost">1000</span>
+Cost: $<span id="secdeccost">1000</span><br />
+count: <span id="secdeccount">0</span>
 </div>
+
+<div class="box">
+<span class="boxtitle">Interest</span><br />
++ <span id="secdec">0.1%</span>%<br />
+Cost: $<span id="secdeccost">10000</span><br />
+count: <span id="secdeccount">0</span>
+</div>
+
 <script src="files/script.js"></script>	
 </body>
 </html>
