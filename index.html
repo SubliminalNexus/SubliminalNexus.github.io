@@ -24,16 +24,29 @@ Count: <span id=mpsinccount>0</span>
 <span class="boxtitle">Second length</span><br />
 - <span id="secdec">5</span>%<br />
 Cost: $<span id="secdeccost">1000</span><br />
-count: <span id="secdeccount">0</span>
+Count: <span id="secdeccount">0</span>
 </div>
 
 <div class="box">
 <span class="boxtitle">Interest</span><br />
-+ <span id="secdec">0.1%</span>%<br />
++ <span id="secdec">0.1</span>%<br />
 Cost: $<span id="secdeccost">10000</span><br />
-count: <span id="secdeccount">0</span>
+Count: <span id="secdeccount">0</span>
 </div>
 
+<div class="box">
+<span class="boxtitle">Gains Multiplier</span><br />
++ <span id="secdec">0.05</span> times<br />
+Cost: $<span id="secdeccost">100000</span><br />
+Count: <span id="secdeccount">0</span>
+</div>
+
+<div class="box" style="display:block">
+	The equation for gained per tic is<br />
+	(Money+(mps+(Money*Interest%))*GainsMult)/(20/seclength)<br />
+	This happens 20 times per second hence the seemingly<br />
+	random 20 thrown in there.
+</div>
 <script src="files/script.js"></script>	
 </body>
 </html>
