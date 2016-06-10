@@ -25,6 +25,6 @@ function moneyInterval(){
   console.log(game.money)},50)
 };
 $(".box").click(function(){
-  var clicked = $(this).attr(id);
+  var clicked = $(this).attr("id");
   console.log(clicked);
 });
