@@ -19,7 +19,8 @@ var game = {};
     game.gainmultiplier.gainmultiplier = 1;
     game.gainmultiplier.cost = 100;
     game.gainmultiplier.count = 0;
-window.setInterval(function(){
-  game.money += ((game.mps.mps+(game.money*game.interest.interest))*game.gainmultiplier.gainmultiplier)/(20/game.seclength.seclength)
-  console.log(game.money);
-},50);
+function moneyInterval(){
+  setInterval(function(){
+  game.money += ((game.mps.mps+(game.money*game.interest.interest))*game.gainmultiplier.gainmultiplier)/(20/game.seclength.seclength);
+  console.log(game.money)},50)
+};
