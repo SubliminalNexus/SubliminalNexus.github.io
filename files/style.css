@@ -9,8 +9,7 @@ body{
 }
 .box{
   background: rgb(100,100,100);
-  padding: 5px;
+  padding: 8px;
   display: inline-block;
-  margin-top: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
