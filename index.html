@@ -4,28 +4,19 @@
 	<link rel="stylesheet" type="text/css" href="files/style.css">
 	<script src="files/jquery-2.1.4.min.js"></script>
 </head>
-<body><div id="contain" style="width:850px">
-	<div class="header header-text">Ishmael Project</div><br />
-	<div class="instrc" style="font-size:150%">
-		<span class="header-text">Intructions</span><br /><br />
-		<span>Select the degree of which you agree with each quote, then click submit.</span><br />
-		<span>If You would like to restart or try again just reload the page.</span><br /><br />
-		<span>In the story Takers are people which live amongst everyday society, while Leavers are indiginous or archaic individuals, who have not been exposed the the Taker lifestyle.</span><br />
-	</div><br />
-	<div class="quotes">
-		<span id="quotetext" style="font-size: 200%"></span><br />
-	</div><br />
-	<div class="buttons blockerino">
-		<select>
-			<option value="2">Strongly Agree</option>
-			<option value="1">Agree</option>
-			<option selected value="0">Neutral</option>
-			<option value="-1">Disagree</option>
-			<option value="-2">Strongly Disagree</option>
-		</select>
-	</div><br />
-		<button id="submit">Start</button>
-	<script src="files/script.js"></script>
-	</div>
+<body>
+<div class="box">
+$<span id="money">100</span><br />
+$<span id="mps">0</span>/sec
+</div>
+<div class="box">
+$+<span id="mpsinc">1</span><br />
+Cost: $<span id="mpsinccost">100</span>
+</div>
+<div class="box">
+%<span id="secdec">5</span><br />
+Cost: $<span id="secdeccost">1000</span>
+</div>
+<script src="files/script.js"></script>	
 </body>
 </html>
