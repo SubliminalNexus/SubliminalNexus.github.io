@@ -1,7 +1,7 @@
 body{
   background: rgb(175,175,175);
   color: rgb(200,200,200);
-
+  font-size: 120%;
 }
 .boxtitle{
   font-size: 150%;
@@ -12,4 +12,5 @@ body{
   padding: 8px;
   display: inline-block;
   border-radius: 10px;
+  margin:5px;
 }
