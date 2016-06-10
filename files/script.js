@@ -26,7 +26,8 @@ function moneyInterval(){
 };
 $(".box").click(function(){
   var clicked = $(this).attr("id");
-  if(game.money >= game.clicked.cost){
+  var gameclicked = game.clicked;
+  if(game.money >= gameclicked.cost){
     console.log("yep");
   } else{
     console.log("nope");
