@@ -24,3 +24,7 @@ function moneyInterval(){
   game.money += ((game.mps.mps+(game.money*game.interest.interest))*game.gainmultiplier.gainmultiplier)/(20/game.seclength.seclength);
   console.log(game.money)},50)
 };
+$(".box").click(function(){
+  var clicked = $(this).attr(id);
+  console.log(clicked);
+});
