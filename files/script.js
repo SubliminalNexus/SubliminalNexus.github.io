@@ -79,8 +79,8 @@ $(".box").click(function(){
   }});
 
 $(".box").hover(function(){
-    $(this).css("background-color", "rgb(75,75,75)");
+    $(this).animate({background: rgb(75,75,75)}, 250);
     }, function(){
-    $(this).css("background-color", "rgb(100,100,100)");
+    $(this).animate({background: rgb(100,100,100)}, 250);;
 });
 moneyInterval();
