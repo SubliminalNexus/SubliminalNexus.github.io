@@ -49,6 +49,9 @@ $("#gainmutlcount").html(Math.floor(gainms.count));
 };
 $(".box").click(function(){
   var clicked = $(this).attr("id");
+  if(clicked != undefined){
+    $(this).css("background", "rgb(120,120,120)")
+  };
   switch(clicked){
     case undefined:
       break;
@@ -80,4 +83,10 @@ $(".box").click(function(){
     break;
 };
 });
+$(".box").click(function(){
+  var hovered = $(this).attr("id");
+  if(hovered != undefined){
+    $(this).css("background", "rgb(75,75,75)")
+  };
+  };
 moneyInterval();
