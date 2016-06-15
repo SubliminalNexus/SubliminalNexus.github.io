@@ -2,6 +2,10 @@ body{
   background: rgb(175,175,175);
   color: rgb(200,200,200);
   font-size: 120%;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+
 }
 .boxtitle{
   font-size: 150%;

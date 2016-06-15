@@ -1,7 +1,7 @@
 var game = {};
   game.money = 100;
   game.mps = {};
-    game.mps.mps = 1;
+    game.mps.mps = 0;
     game.mps.cost = 100;
     game.mps.count = 0;
 //after first presteige
@@ -19,17 +19,64 @@ var game = {};
     game.gainmultiplier.gainmultiplier = 1;
     game.gainmultiplier.cost = 100;
     game.gainmultiplier.count = 0;
+var mpss = game.mps;
+var secls = game.seclength;
+var ints = game.interest;
+var gainms = game.gainmultiplier;
+
 function moneyInterval(){
   setInterval(function(){
-  game.money += ((game.mps.mps+(game.money*game.interest.interest))*game.gainmultiplier.gainmultiplier)/(20/game.seclength.seclength);
-  console.log(game.money)},50)
+  game.money += (((mpss.mps+(game.money*ints.interest))*gainms.gainmultiplier)/(secls.seclength))/20;
+  update();
+},50)
+};
+function update(){
+$("#money").html(game.money);
+$("#moneypersec").html(mpss.mps);
+$("#secleng").html(secls.seclength);
+//$("#mpsinc").html();
+$("#mpsinccost").html(mpss.cost);
+$("#mpsinccount").html(mpss.count);
+//$("#seclen").html();
+$("#seclencost").html(sels.cost);
+$("#seclencount").html(sels.count);
+//$("#inter").html();
+$("#intercost").html(ints.cost);
+$("#intercount").html(ints.count);
+//$("#gainmutl").html();
+$("#gainmutlcost").html(gainms.cost);
+$("#gainmutlcount").html(gainms.count);
 };
 $(".box").click(function(){
   var clicked = $(this).attr("id");
-  var gameclicked = game.clicked;
-  if(game.money >= gameclicked.cost){
-    console.log("yep");
-  } else{
-    console.log("nope");
-  };
+  switch(clicked){
+    case undefined:
+      break;
+    case "mps":
+      if(game.money >= mpss.cost){
+        game.money -= mpss.cost;
+        mpss.mps++;
+        mpss.count++;
+        };
+      break;
+    case "seclength":
+      if(game.money >= secls.cost){
+        game.money -= secls.cost;
+        secls.seclength*0.95;
+        secls.count++;
+        };
+    break;
+    case "interest":
+      if(game.money >= ints.cost){
+        game.money -= ints.cost;
+        ints.interest += 0.001;
+        ints.count++;
+        };
+    break;
+    case "gainmultiplier":
+      if(game.money >= gainms.cost){
+        game.money -= gainms.cost;
+        gainms.gainmultiplier *= 1.05;};
+    break;
+};
 });
