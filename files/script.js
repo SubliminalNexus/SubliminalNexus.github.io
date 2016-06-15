@@ -48,8 +48,8 @@ $("#gainmutlcost").html(Math.floor(gainms.cost));
 $("#gainmutlcount").html(Math.floor(gainms.count));
 };
 $(".box").click(function(){
-  $(this).css("background-color", "rgb(120,120,120)");
   var clicked = $(this).attr("id");
+  $(this).css("background-color", "rgb(120,120,120)");
   switch(clicked){
     case "mps":
       if(game.money >= mpss.cost){
