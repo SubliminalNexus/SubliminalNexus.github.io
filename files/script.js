@@ -1,5 +1,6 @@
 var game = {};
   game.money = 100;
+  game.timetest = 50;
   game.mps = {};
     game.mps.mps = 0;
     game.mps.cost = 100;
@@ -28,7 +29,7 @@ function moneyInterval(){
   setInterval(function(){
   game.money += (((mpss.mps+(game.money*ints.interest))*gainms.gainmultiplier)/(secls.seclength))/20;
   update();
-},50)
+},game.timetest;)
 };
 function update(){
 $("#money").html(Math.floor(game.money));
@@ -55,7 +56,7 @@ $(".box").click(function(){
         game.money -= mpss.cost;
         mpss.mps++;
         mpss.count++;
-        mpss.cost += 5;
+        mpss.cost += 5                                        ;
         };
       break;
     case "seclength":
