@@ -32,20 +32,20 @@ function moneyInterval(){
 };
 function update(){
 $("#money").html(Math.floor(game.money));
-$("#moneypersec").html(mpss.mps);
-$("#secleng").html(secls.seclength);
+$("#moneypersec").html(Math.floor((((mpss.mps+(game.money*ints.interest))*gainms.gainmultiplier)/(secls.seclength))));
+$("#secleng").html(Math.floor(secls.seclength*1000)/1000);
 //$("#mpsinc").html();
-$("#mpsinccost").html(mpss.cost);
-$("#mpsinccount").html(mpss.count);
+$("#mpsinccost").html(Math.floor(mpss.cost));
+$("#mpsinccount").html(Math.floor(mpss.count));
 //$("#seclen").html();
-$("#seclencost").html(secls.cost);
-$("#seclencount").html(secls.count);
+$("#seclencost").html(Math.floor(secls.cost));
+$("#seclencount").html(Math.floor(secls.count));
 //$("#inter").html();
-$("#intercost").html(ints.cost);
-$("#intercount").html(ints.count);
+$("#intercost").html(Math.floor(ints.cost));
+$("#intercount").html(Math.floor(ints.count));
 //$("#gainmutl").html();
-$("#gainmutlcost").html(gainms.cost);
-$("#gainmutlcount").html(gainms.count);
+$("#gainmutlcost").html(Math.floor(gainms.cost));
+$("#gainmutlcount").html(Math.floor(gainms.count));
 };
 $(".box").click(function(){
   var clicked = $(this).attr("id");
