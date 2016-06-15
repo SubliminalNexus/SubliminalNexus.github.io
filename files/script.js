@@ -55,6 +55,7 @@ $(".box").click(function(){
         game.money -= mpss.cost;
         mpss.mps++;
         mpss.count++;
+        mpss.cost += 5;
         };
       break;
     case "seclength":
