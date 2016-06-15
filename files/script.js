@@ -39,7 +39,7 @@ $("#mpsinccost").html(mpss.cost);
 $("#mpsinccount").html(mpss.count);
 //$("#seclen").html();
 $("#seclencost").html(secls.cost);
-$("#seclencount").html(sels.count);
+$("#seclencount").html(secls.count);
 //$("#inter").html();
 $("#intercost").html(ints.cost);
 $("#intercount").html(ints.count);
