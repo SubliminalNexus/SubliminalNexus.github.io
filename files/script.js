@@ -48,13 +48,9 @@ $("#gainmutlcost").html(Math.floor(gainms.cost));
 $("#gainmutlcount").html(Math.floor(gainms.count));
 };
 $(".box").click(function(){
+  $(this).css("background-color", "rgb(120,120,120)");
   var clicked = $(this).attr("id");
-  if(clicked != undefined){
-    $(this).css("background", "rgb(120,120,120)")
-  };
   switch(clicked){
-    case undefined:
-      break;
     case "mps":
       if(game.money >= mpss.cost){
         game.money -= mpss.cost;
@@ -81,12 +77,13 @@ $(".box").click(function(){
         game.money -= gainms.cost;
         gainms.gainmultiplier *= 1.05;};
     break;
-};
-});
-$(".box").click(function(){
-    var hovered = $(this).attr("id");
-    if(hovered != undefined){
-      $(this).css("background", "rgb(75,75,75)")
-    };
+  }},function(){
+    $("this").css("background-color", "rgb(100,100,100)")
   });
+
+$(".box").hover(function(){
+    $(this).css("background-color", "rgb(75,75,75)");
+    }, function(){
+    $(this).css("background-color", "rgb(100,100,100)");
+});
 moneyInterval();
