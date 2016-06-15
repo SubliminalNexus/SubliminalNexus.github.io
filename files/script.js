@@ -48,8 +48,8 @@ $("#gainmutlcost").html(Math.floor(gainms.cost));
 $("#gainmutlcount").html(Math.floor(gainms.count));
 };
 $(".box").click(function(){
-  var clicked = $(this).attr("id");
-  $(this).css("background-color", "rgb(120,120,120)");
+  $(this).css("background-color", "rgb(120,120,120)", function(){
+     var clicked = $(this).attr("id");
   switch(clicked){
     case "mps":
       if(game.money >= mpss.cost){
@@ -64,20 +64,22 @@ $(".box").click(function(){
         secls.seclength *= 0.95;
         secls.count++;
         };
-    break;
+      break;
     case "interest":
       if(game.money >= ints.cost){
         game.money -= ints.cost;
         ints.interest += 0.001;
         ints.count++;
         };
-    break;
+      break;
     case "gainmultiplier":
       if(game.money >= gainms.cost){
         game.money -= gainms.cost;
         gainms.gainmultiplier *= 1.05;};
-    break;
-  }},function(){
+      break;
+  }; 
+  });
+},function(){
     $("this").css("background-color", "rgb(100,100,100)")
   });
 
