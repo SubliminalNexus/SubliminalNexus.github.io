@@ -80,3 +80,4 @@ $(".box").click(function(){
     break;
 };
 });
+moneyInterval();
