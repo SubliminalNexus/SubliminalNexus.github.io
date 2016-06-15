@@ -33,7 +33,7 @@ function moneyInterval(){
 function update(){
 $("#money").html(Math.floor(game.money));
 $("#moneypersec").html(Math.floor((((mpss.mps+(game.money*ints.interest))*gainms.gainmultiplier)/(secls.seclength))));
-$("#secleng").html(Math.floor(secls.seclength*1000)/1000);
+$("#secleng").html(Math.floor(secls.seclength*100000)/1000);
 //$("#mpsinc").html();
 $("#mpsinccost").html(Math.floor(mpss.cost));
 $("#mpsinccount").html(Math.floor(mpss.count));
