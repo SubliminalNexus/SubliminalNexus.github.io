@@ -62,7 +62,7 @@ $(".box").click(function(){
     case "seclength":
       if(game.money >= secls.cost){
         game.money -= secls.cost;
-        secls.seclength*0.95;
+        secls.seclength *= 0.95;
         secls.count++;
         };
     break;
