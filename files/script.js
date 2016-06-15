@@ -10,15 +10,15 @@ var game = {};
     game.seclength.cost = 1000;
     game.seclength.count = 0;
 //after second presteige
-  game.interest = {};
-    game.interest.interest = 0.00;
-    game.interest.cost = 10000;
-    game.interest.count = 0;
-//after thrid presteige
   game.gainmultiplier = {};
     game.gainmultiplier.gainmultiplier = 1;
-    game.gainmultiplier.cost = 100;
+    game.gainmultiplier.cost = 10000;
     game.gainmultiplier.count = 0;
+//after thrid presteige
+  game.interest = {};
+    game.interest.interest = 0.00;
+    game.interest.cost = 100000;
+    game.interest.count = 0;
 var mpss = game.mps;
 var secls = game.seclength;
 var ints = game.interest;
@@ -40,12 +40,12 @@ $("#mpsinccount").html(Math.floor(mpss.count));
 //$("#seclen").html();
 $("#seclencost").html(Math.floor(secls.cost));
 $("#seclencount").html(Math.floor(secls.count));
-//$("#inter").html();
-$("#intercost").html(Math.floor(ints.cost));
-$("#intercount").html(Math.floor(ints.count));
 //$("#gainmutl").html();
 $("#gainmutlcost").html(Math.floor(gainms.cost));
 $("#gainmutlcount").html(Math.floor(gainms.count));
+//$("#inter").html();
+$("#intercost").html(Math.floor(ints.cost));
+$("#intercount").html(Math.floor(ints.count));
 };
 $(".box").click(function(){
   var clicked = $(this).attr("id");
@@ -64,17 +64,19 @@ $(".box").click(function(){
         secls.count++;
         };
       break;
+    case "gainmultiplier":
+      if(game.money >= gainms.cost){
+        game.money -= gainms.cost;
+        gainms.gainmultiplier *= 1.05;
+        gainms.count++;
+      };
+      break;
     case "interest":
       if(game.money >= ints.cost){
         game.money -= ints.cost;
         ints.interest += 0.001;
         ints.count++;
         };
-      break;
-    case "gainmultiplier":
-      if(game.money >= gainms.cost){
-        game.money -= gainms.cost;
-        gainms.gainmultiplier *= 1.05;};
       break;
   }});
 
