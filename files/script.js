@@ -31,7 +31,7 @@ function moneyInterval(){
 },50)
 };
 function update(){
-$("#money").html(game.money);
+$("#money").html(Math.floor(game.money));
 $("#moneypersec").html(mpss.mps);
 $("#secleng").html(secls.seclength);
 //$("#mpsinc").html();
