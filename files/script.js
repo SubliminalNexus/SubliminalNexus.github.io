@@ -84,9 +84,9 @@ $(".box").click(function(){
 };
 });
 $(".box").click(function(){
-  var hovered = $(this).attr("id");
-  if(hovered != undefined){
-    $(this).css("background", "rgb(75,75,75)")
-  };
-  };
+    var hovered = $(this).attr("id");
+    if(hovered != undefined){
+      $(this).css("background", "rgb(75,75,75)")
+    };
+  });
 moneyInterval();
