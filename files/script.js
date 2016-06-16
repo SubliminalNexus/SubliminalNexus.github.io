@@ -29,8 +29,7 @@ function moneyInterval(){
   setInterval(function(){
   game.money += (((mpss.mps+(game.money*ints.interest))*gainms.gainmultiplier)/(secls.seclength))/20;
   update();
-},game.timetest;)
-};
+},game.timetest)};
 function update(){
 $("#money").html(Math.floor(game.money));
 $("#moneypersec").html(Math.floor((((mpss.mps+(game.money*ints.interest))*gainms.gainmultiplier)/(secls.seclength))));
