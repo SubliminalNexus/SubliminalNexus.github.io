@@ -1,5 +1,5 @@
 var game = {};
-  game.money = 100;
+  game.money = 10;
   game.mps = {};
     game.mps.mps = 0;
     game.mps.cost = 10;
