@@ -32,7 +32,7 @@ function moneyInterval(){
 };
 function update(){
 $("#money").html(Math.floor(game.money));
-$("#moneypersec").html(Math.floor(((mpss.mps)*gainms.gainmultiplier)/(secls.seclength)+(game.money*ints.interest));
+$("#moneypersec").html(Math.floor(((mpss.mps)*gainms.gainmultiplier)/(secls.seclength)+(game.money*ints.interest)));
 $("#secleng").html(Math.floor(secls.seclength*100000)/1000);
 //$("#mpsinc").html();
 $("#mpsinccost").html(Math.floor(mpss.cost));
