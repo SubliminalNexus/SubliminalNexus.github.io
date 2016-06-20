@@ -26,13 +26,13 @@ var gainms = game.gainmultiplier;
 
 function moneyInterval(){
   setInterval(function(){
-  game.money += (((mpss.mps+(game.money*ints.interest))*gainms.gainmultiplier)/(secls.seclength))/20;
+  game.money += (((mpss.mps)*gainms.gainmultiplier)/(secls.seclength)+(game.money*ints.interest))/20;
   update();
 },50)
 };
 function update(){
 $("#money").html(Math.floor(game.money));
-$("#moneypersec").html(Math.floor((((mpss.mps+(game.money*ints.interest))*gainms.gainmultiplier)/(secls.seclength))));
+$("#moneypersec").html(Math.floor(((mpss.mps)*gainms.gainmultiplier)/(secls.seclength)+(game.money*ints.interest));
 $("#secleng").html(Math.floor(secls.seclength*100000)/1000);
 //$("#mpsinc").html();
 $("#mpsinccost").html(Math.floor(mpss.cost));
