@@ -17,7 +17,7 @@ var game = {};
 //after thrid presteige
   game.interest = {};
     game.interest.interest = 0.00;
-    game.interest.cost = 100000;
+    game.interest.cost = 1000;
     game.interest.count = 0;
 var mpss = game.mps;
 var secls = game.seclength;
@@ -77,8 +77,9 @@ $(".box").click(function(){
     case "interest":
       if(game.money >= ints.cost){
         game.money -= ints.cost;
-        ints.interest += 0.001;
+        ints.interest += 0.0001;
         ints.count++;
+        ints.cost += 5000;
         };
       break;
   }});
