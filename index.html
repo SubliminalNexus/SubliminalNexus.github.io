@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -6,47 +7,46 @@
 </head>
 <body>
 
-<div class="fox">
+<div class="box">
 <span class="boxtitle">Money</span><br />
 $<span id="money"></span><br />
 $<span id="moneypersec"></span>/sec<br />
 <span id="secleng"></span>% Sec length
 </div>
 
-<div class="box" id="mps">
+<div class="box hover" id="mps">
 <span class="boxtitle">Money/sec</span><br />
 + $<span id="mpsinc">1</span><br />
 Cost: $<span id="mpsinccost"></span><br />
 Count: <span id=mpsinccount></span>
 </div>
 
-<div class="box" id="seclength">
+<div class="box hover" id="seclength">
 <span class="boxtitle">Second length</span><br />
 - <span id="seclen">5</span>%<br />
 Cost: $<span id="seclencost"></span><br />
 Count: <span id="seclencount"></span>
 </div>
 
-<div class="box" id="gainmultiplier">
+<div class="box hover" id="gainmultiplier">
 <span class="boxtitle">Gains Multiplier</span><br />
 + <span id="gainmult">0.05</span> times<br />
 Cost: $<span id="gainmultcost"></span><br />
 Count: <span id="gainmultcount"></span>
 </div>
 
-<div class="box" id="interest">
+<div class="box hover" id="interest">
 <span class="boxtitle">Interest</span><br />
-+ <span id="inter">0.1</span>%<br />
++ <span id="inter">0.01</span>%<br />
 Cost: $<span id="intercost"></span><br />
 Count: <span id="intercount"></span>
 </div>
-<br />
-<div class="fox">
-	The equation for gained per tic is<br />
-	((Money+(mps+(Money*Interest%))*GainsMult)/(seclength))/20<br />
-	This happens 20 times per second hence the seemingly<br />
-	random 20 thrown in there.
+<div class="box">
+<div class="box subox">
+	Base mps: <span id="bmps">0</span><div class="l arr"><</div><div class="r arr">></div><input type="text" id="bmpsc"><div id="bmpsr">Reset</div>
 </div>
+</div>
+<br />
 <script src="files/script.js"></script>	
 </body>
 </html>
