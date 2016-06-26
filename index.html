@@ -13,29 +13,25 @@ $<span id="money"></span><br />
 $<span id="moneypersec"></span>/sec<br />
 <span id="secleng"></span>% Sec length
 </div>
-
-<div class="box hover" id="mps">
+<div class="box hover click" id="mps">
 <span class="boxtitle">Money/sec</span><br />
 + $<span id="mpsinc">1</span><br />
 Cost: $<span id="mpsinccost"></span><br />
 Count: <span id=mpsinccount></span>
 </div>
-
-<div class="box hover" id="seclength">
+<div class="box hover click" id="seclength">
 <span class="boxtitle">Second Length</span><br />
 - <span id="seclen">5</span>%<br />
 Cost: $<span id="seclencost"></span><br />
 Count: <span id="seclencount"></span>
 </div>
-
-<div class="box hover" id="gainmultiplier">
+<div class="box hover click" id="gainmultiplier">
 <span class="boxtitle">Gains Multiplier</span><br />
 + <span id="gainmult">0.05</span> times<br />
 Cost: $<span id="gainmultcost"></span><br />
 Count: <span id="gainmultcount"></span>
 </div>
-
-<div class="box hover" id="interest">
+<div class="box hover click" id="interest">
 <span class="boxtitle">Interest</span><br />
 + <span id="inter">0.01</span>%<br />
 Cost: $<span id="intercost"></span><br />
@@ -46,30 +42,29 @@ Count: <span id="intercount"></span>
 	<tr>
 		<td>Base mps:</td>
 		<td id="bmps">0</td>
-		<td><</td>
-		<td>></td>
-		<td><input type="text" id="bmpsc"></td>
-		<td>Reset</td>
+		<td class="arr hover" id="bmpslarr"><</td>
+		<td class="arr hover" id="bmpsrarr">></td>
+		<td><input type="text" id="bmpsc"><span id="bmpscc">✔</span></td>
+		<td class="click" id="gainmultr">Reset</td>
 	</tr>
 	<tr>
 		<td>Second Length</td>
 		<td id="seclencid">0</td>
-		<td><</td>
-		<td>></td>
-		<td><input type="text" id="seclenc"></td>
-		<td>Reset</td>
+		<td class="arr hover" id="seclenlarr"><</td>
+		<td class="arr hover" id="seclenrarr">></td>
+		<td><input type="text" id="seclenc"><span id="seclencc">✔</span></td>
+		<td class="click" id="gainmultr">Reset</td>
 	</tr>
 	<tr>
 		<td>Gains Multiplier</td>
 		<td id="gainmultcid">0</td>
-		<td><</td>
-		<td>></td>
-		<td><input type="text" id="gainmultc"></td>
-		<td>Reset</td>
+		<td class="arr hover" id="gainmultlarr"><</td>
+		<td class="arr hover" id="gainmultrarr">></td>
+		<td><input type="text" id="gainmultc"><span id="gainmultcc">✔</span></td>
+		<td class="click" id="gainmultr">Reset</td>
 	</tr>
 </table>
 </div>
-<br />
 <script src="files/script.js"></script>	
 </body>
 </html>

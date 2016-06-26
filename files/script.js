@@ -47,7 +47,7 @@ $("#gainmultcount").html(Math.floor(gainms.count));
 $("#intercost").html(Math.floor(ints.cost));
 $("#intercount").html(Math.floor(ints.count));
 };
-$(".hover").click(function(){
+$(".click").click(function(){
   var clicked = $(this).attr("id");
   switch(clicked){
     case "mps":
