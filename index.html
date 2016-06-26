@@ -22,7 +22,7 @@ Count: <span id=mpsinccount></span>
 </div>
 
 <div class="box hover" id="seclength">
-<span class="boxtitle">Second length</span><br />
+<span class="boxtitle">Second Length</span><br />
 - <span id="seclen">5</span>%<br />
 Cost: $<span id="seclencost"></span><br />
 Count: <span id="seclencount"></span>
@@ -40,11 +40,34 @@ Count: <span id="gainmultcount"></span>
 + <span id="inter">0.01</span>%<br />
 Cost: $<span id="intercost"></span><br />
 Count: <span id="intercount"></span>
-</div>
+</div><br />
 <div class="box">
-<div class="box subox">
-	Base mps: <span id="bmps">0</span><div class="l arr"><</div><div class="r arr">></div><input type="text" id="bmpsc"><div id="bmpsr">Reset</div>
-</div>
+<table>
+	<tr>
+		<td>Base mps:</td>
+		<td id="bmps">0</td>
+		<td><</td>
+		<td>></td>
+		<td><input type="text" id="bmpsc"></td>
+		<td>Reset</td>
+	</tr>
+	<tr>
+		<td>Second Length</td>
+		<td id="seclencid">0</td>
+		<td><</td>
+		<td>></td>
+		<td><input type="text" id="seclenc"></td>
+		<td>Reset</td>
+	</tr>
+	<tr>
+		<td>Gains Multiplier</td>
+		<td id="gainmultcid">0</td>
+		<td><</td>
+		<td>></td>
+		<td><input type="text" id="gainmultc"></td>
+		<td>Reset</td>
+	</tr>
+</table>
 </div>
 <br />
 <script src="files/script.js"></script>	
