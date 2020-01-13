@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Merge Idle</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+  <div class="blob" id="blob1">
+    <div id="barhost"><div id="barinner"></div><span id="barprogress">0%</span></div>
+    <table id="gridtable">
+      <tr id="row1">
+        <td id="grid1" class="gridspace"><div class="pointblob"><span class="pointblobspan">1</span></div></td>
+        <td id="grid2" class="gridspace"></td>
+        <td id="grid3" class="gridspace"></td>
+        <td id="grid4" class="gridspace"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="blob" id="blob2">
+    <div id="upgradesblob">
+      <div class="nameTitle">
+        Points: <span id="points">0</span>
+      </div>
+      <div class="upgTitle">
+        Decrease bar timer by 4%<br />
+        Current: <span id="barTimerCurrent">100%</span><br />
+        Cost: <span id="barTimerCost" class="cost">10</span>
+        <div id="barTimerButton" class="customButton">Upgrage</div>
+      </div>
+      <div class="upgTitle">
+        Increase the bar starting percent by 2%<br />
+        Current: <span id="barPercentCurrent">2%</span><br />
+        Cost: <span id="barPercentCost" class="cost">20</span>
+        <div id="barPercentButton" class="customButton">Upgrage</div>
+      </div>
+      <div class="upgTitle">
+        Gain points when a merge happens<br />
+        Current: <span id="mergePointsCurrent">0x</span><br />
+        Cost: <span id="mergePointsCost" class="cost">100</span>
+        <div id="mergePointsButton" class="customButton">Upgrage</div>
+      </div>
+      <div class="upgTitle">
+        Buy a grid space<br />
+        Cost: <span id="gridSpaceCost" class="cost">100</span>
+        <div id="gridSpaceButton" class="customButton">Upgrage</div>
+      </div>
+    </div>
+  </div>
+<script src="script.js"></script> 
+</body>
+</html>
